@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<title>Login</title>
+{% endblock %}
+
+{% block body %}
+<div class="p-3 mb-2 bg-body-secondary" style="width: 100%; height: 100vh;">
+  <figure class="text-center" style="justify-content: center; align-items: center;">
+    <blockquote class="blockquote">
+      <h3 style="margin-top: 100px;">Trixs</h3>
+      <h5 style="margin-top: 20px;">Masuk ke akunmu?
+        <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="/daftar">
+          Daftar
+        </a>
+      </h5>
+    </blockquote>
+  </figure>
+<div class="position-absolute top-50 start-50 translate-middle">
+<div class="container" style="width: 300px; height: 325px; background-color: white; border-radius: 10px;">
+    <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label" style="margin-top: 10px;">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 200px; margin-left: 40px; margin-top: 5px;">Submit</button>
+      </form>   
+</div>
+</div> 
+</div>
+{% endblock %}

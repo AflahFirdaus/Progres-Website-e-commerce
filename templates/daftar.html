@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<title>Daftar</title>
+{% endblock %}
+
+{% block body %}
+<div class="p-3 mb-2 bg-body-secondary" style="width: 100%; height: 100vh;">
+    <figure class="text-center" style="justify-content: center; align-items: center;">
+        <blockquote class="blockquote">
+          <h3 style="margin-top: 120px;">Trixs</h3>
+          <h5 style="margin-top: 15px;">Masuk ke akunmu?
+            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="/login">
+              Masuk
+            </a>
+          </h5>
+        </blockquote>
+      </figure>
+<div class="p-3 mb-2 bg-body-secondary" style="width: 100%; height: 100vh;">
+<div class="position-absolute top-50 start-50 translate-middle">
+<div class="container" style="width: 300px; height: 250px; background-color: white; border-radius: 10px; box-shadow: 20px;">
+    <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label" style="margin-top: 25px;">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 220px; margin-left: 28px; margin-top: 30px;">Submit</button>
+      </form>
+</div>
+</div>
+</div>
+{% endblock %}
